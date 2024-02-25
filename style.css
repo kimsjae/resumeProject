@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+.inline {
+    display: inline;
+}
+
+.btn-ml {
+    margin-left: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.ms-400 {
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.pt-200 {
+    padding-top: 200px;
+}
+
+.div1 {
+    padding-bottom: 50px;
+    margin-top: 50px;
+    border: 1px solid rgb(95, 131, 160);
+    border-radius: 10px;
+}
