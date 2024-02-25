@@ -9,10 +9,6 @@
             display: inline;
         }
 
-        .btn-color {
-            background-color: #008CBA;
-        }
-
         .grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -35,13 +31,20 @@
             padding-top: 200px;
         }
 
+        .div1 {
+            padding-bottom: 50px;
+            margin-top: 50px;
+            border: 1px solid rgb(95, 131, 160);
+            border-radius: 10px;
+        }
+
         
     </style>
 </head>
 <body>
     <div class="ms-400 pt-200">
         <div><h1>My Page</h1></div>
-        <div class="border">
+        <div class="div1">
             <div class="mb-10">
                 <span><b>내 정보</b></span>
                 <form action="" class="inline btn-color">
@@ -49,9 +52,9 @@
                 </form>
             </div>
             <div class="grid mb-50">
-                <div class="border">
+                <div>
                     <p><h4>기본정보</h4></p>
-                    <table>
+                    <table border="1">
                         <tr>
                             <td>ID</td>
                             <td>김성재<!-- 여기에 ID 데이터를 불러와서 표시 --></td>
@@ -63,16 +66,16 @@
                       </table>
                     
                 </div>
-                <div class="border">
-                    <p>개인정보</p>
-                    <table>
+                <div>
+                    <p><h4>개인정보</h4></p>
+                    <table border="1">
                         <tr>
                             <td>이름</td>
                             <td>김성재<!-- 여기에 이름 데이터를 불러와서 표시 --></td>
                         </tr>
                         <tr>
                             <td>생년월일</td>
-                            <td><!-- 여기에 생년월일 데이터를 불러와서 표시 --></td>
+                            <td>1998년 5월 15일<!-- 여기에 생년월일 데이터를 불러와서 표시 --></td>
                         </tr>
                         <tr>
                             <td>성별</td>
@@ -88,7 +91,7 @@
                         </tr>
                         <tr>
                             <td>보유기술</td>
-                            <td><!-- 여기에 보유기술 데이터를 불러와서 표시 --></td>
+                            <td>Java, Spring, Git, HTML, CSS<!-- 여기에 보유기술 데이터를 불러와서 표시 --></td>
                         </tr>
                       </table>
                 </div>
@@ -96,14 +99,25 @@
             
         </div>
 
-        <div class="border">
+        <div class="div1">
             <span><b>내 이력서</b></span>
             <form action="" class="inline">
                 <button style="margin-left: auto;">추가</button>
             </form>
             <div>
                 <table>
-                    <td>이력서 데이터 불러오자</td>
+                    <td style="display: flex; justify-content: space-around;">이력서 데이터 불러오자
+                        <div>
+                            <button>수정</button>
+                            <button>삭제</button>
+                        </div>
+                    </td>
+                    <td style="display: flex; justify-content: space-around;">이력서 데이터 불러오자
+                        <div>
+                            <button>수정</button>
+                            <button>삭제</button>
+                        </div>
+                    </td>
                 </table>
             </div>
 
